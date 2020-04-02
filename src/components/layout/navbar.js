@@ -8,7 +8,7 @@ function Navbar() {
           <a className="navbar-brand" href="index.html">AB</a>
         </div>
         <ul className="nav navbar-nav">
-          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>

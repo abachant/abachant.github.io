@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/layout/navbar.js'
+import About from './components/about.js'
 import Footer from './components/layout/footer.js'
 import logo from './logo.svg';
 import './App.css';
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <About />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
