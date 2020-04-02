@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/layout/navbar.js'
+import Footer from './components/layout/footer.js'
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer />
     </div>
   );
 }
