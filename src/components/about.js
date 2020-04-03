@@ -1,11 +1,9 @@
 import React from 'react';
-import background from '../background.gif';
 
 
 function About() {
   return(
-    <div>
-      <img src={background} alt="animation of the buses of downtown Providence, RI"/>
+    <div id="aboutBackground" className="container-fluid">
       <div className="jumbotron">
         <h1>Aubrey Bachant</h1>
         <p>
