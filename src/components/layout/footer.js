@@ -1,8 +1,13 @@
 import React from 'react';
 
+function getDate() {
+  const date = new Date();
+  return date.getFullYear();
+}
+
 function Footer() {
   return(
-    <footer>©2020 Aubrey Bachant</footer>
+  <footer>©{getDate()} Aubrey Bachant</footer>
   )
 }
 
