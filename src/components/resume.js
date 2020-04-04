@@ -104,7 +104,7 @@ function Resume() {
         <div>
             <a href="https://docs.google.com/document/d/1d9vJS8ZktSJLMsFDTyhtcAKI29qBRL1bIK5-GjqzBpE/edit?usp=sharing">View Resume on Google Docs</a>
             <br />
-            <a href="pictures/Garrett-Bachant-Resume.pdf" class="footer" download>Download Resume as PDF</a>
+            <a href="pictures/Garrett-Bachant-Resume.pdf" download>Download Resume as PDF</a>
         </div>   
     </div>
   )

@@ -49,6 +49,10 @@ html {
   opacity: 0.9;
 }
 
+.nav-item{
+  color: #ffffff;
+}
+
 .navbar {
   flex: none;
 }
