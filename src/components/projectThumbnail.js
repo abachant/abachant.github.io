@@ -17,8 +17,7 @@ class ProjectThumbnail extends React.Component {
                     </a>
                 </div>
             </div>
-        );
-            
+        );      
     }
 }
 
