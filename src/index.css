@@ -57,6 +57,10 @@ html {
   flex: none;
 }
 
+.thumbnail-container{
+  display: flex;
+  flex-wrap: wrap;
+}
 /* ids */
 
 #aboutBackground {

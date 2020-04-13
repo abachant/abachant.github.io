@@ -11,7 +11,7 @@ class Projects extends React.Component {
 
   render(){
     return(
-      <div className="container-fluid">
+      <div className="container-fluid thumbnail-container">
         <ProjectThumbnail title="Project 1" description="Project 1 Description"/>
         <ProjectThumbnail title="Project 2" description="Project 2 Description"/>
         <ProjectThumbnail title="Project 3" description="Project 3 Description"/>

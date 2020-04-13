@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return(
-    <div id="aboutBackground" className="container-fluid">
+    <div id="about-background" className="container-fluid">
       <div className="jumbotron">
         <h1>Aubrey Bachant</h1>
         <p>
