@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import ProjectThumbnail from './projectThumbnail.js';
 
 
@@ -49,7 +51,7 @@ class Projects extends React.Component {
 
   // Create a <ProjectThumbnail /> for each object in the state
   createThumbnails() {
-    return this.state.projectThumbnails.map(object => <ProjectThumbnail title={object.title} description={object.description} imageSrc={object.imageSrc} imageAlt={object.imageAlt}/>)
+    return this.state.projectThumbnails.map(object => <Link to={`/projects/${object.title}`}><ProjectThumbnail title={object.title} description={object.description} imageSrc={object.imageSrc} imageAlt={object.imageAlt}/></Link>)
   }
 
   render(){
