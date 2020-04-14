@@ -6,19 +6,57 @@ class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      projectThumbnails: [
+        {
+          title: "Project 1 ",
+          description: "Blah blah blah good project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        },
+        {
+          title: "Project 2 ",
+          description: "Blah blah ggblah good project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        },
+        {
+          title: "Project 3 ",
+          description: "Blah blah sdfgblah good project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        },
+        {
+          title: "Project 4 ",
+          description: "Blah blah blah ggsdfgood project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        },
+        {
+          title: "Project 5 ",
+          description: "Blah blagsdfgh blah good project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        },
+        {
+          title: "Project 6 ",
+          description: "Blah blah sdfgsdfblah good project thbh",
+          imageSrc: "logo192.png",
+          imageAlt: "thumbnail",
+        }
+      ]
     };
+  };
+
+  // Create a <ProjectThumbnail /> for each object in the state
+  createThumbnails() {
+    return this.state.projectThumbnails.map(object => <ProjectThumbnail title={object.title} description={object.description} imageSrc={object.imageSrc} imageAlt={object.imageAlt}/>)
   }
 
   render(){
     return(
       <div className="container-fluid thumbnail-container">
-        <ProjectThumbnail title="Project 1" description="Project 1 Description"/>
-        <ProjectThumbnail title="Project 2" description="Project 2 Description"/>
-        <ProjectThumbnail title="Project 3" description="Project 3 Description"/>
-        <ProjectThumbnail title="Project 4" description="Project 4 Description"/>
-        <ProjectThumbnail title="Project 5" description="Project 5 Description"/>
-        <ProjectThumbnail title="Project 6" description="Project 6 Description"/>
-    </div>
+        {this.createThumbnails()}
+      </div>
     );
   }
 }
