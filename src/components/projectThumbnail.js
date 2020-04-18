@@ -1,5 +1,5 @@
 import React from 'react';
-
+import content from './projectContent.jsx';
 
 class ProjectThumbnail extends React.Component {
     render() {
