@@ -2,6 +2,8 @@ import React from 'react';
 const content = [
     {
         title: "Project 1",
+        id: "1",
+        url: "Project-1",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
@@ -9,6 +11,8 @@ const content = [
     },
     {
         title: "Project 2",
+        id: "2",
+        url: "Project-2",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
@@ -16,6 +20,8 @@ const content = [
     },
     {
         title: "Project 3",
+        id: "3",
+        url: "Project-3",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
@@ -23,6 +29,8 @@ const content = [
     },
     {
         title: "Project 4",
+        id: "4",
+        url: "Project-4",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
@@ -30,6 +38,8 @@ const content = [
     },
     {
         title: "Project 5",
+        id: "5",
+        url: "Project-5",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
@@ -37,6 +47,8 @@ const content = [
     },
     {
         title: "Project 6",
+        id: "6",
+        url: "Project-6",
         description: "",
         thumbnailSrc: "",
         thumbnailAlt: "",
