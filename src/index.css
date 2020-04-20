@@ -64,8 +64,8 @@ html {
 
 /* ids */
 
-#aboutBackground {
-  background-image: url("./background.gif");
+#about-background {
+  background-image: url("./pictures/background.gif");
   flex: 1 1 auto;
   padding-top: 7%;
   padding-right: 15%
