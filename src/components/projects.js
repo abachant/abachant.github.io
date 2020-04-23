@@ -22,7 +22,7 @@ class Projects extends React.Component {
           id: "2",
           url: "RIPTA-dashboard",
           description: "Realtime dashboard using RIPTA's API",
-          imageSrc: "logo192.png",
+          imageSrc: require("../pictures/ripta-dashboard.png"),
           imageAlt: "thumbnail",
         },
         {
@@ -30,7 +30,7 @@ class Projects extends React.Component {
           id: "3",
           url: "osmnx-grids",
           description: "Using OSMnx to analyze the grids of New York City",
-          imageSrc: "logo192.png",
+          imageSrc: require("../pictures/osmnx_nyc_crop.png"),
           imageAlt: "thumbnail",
         },
         {
@@ -38,7 +38,7 @@ class Projects extends React.Component {
           id: "4",
           url: "rhyme-scheme",
           description: "A Jupyter Notebook for analyzing stylistic habits of songwriters",
-          imageSrc: "logo192.png",
+          imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
           imageAlt: "thumbnail",
         }
       ]

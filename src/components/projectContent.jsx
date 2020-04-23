@@ -1,4 +1,5 @@
 import React from 'react';
+
 const content = [
     {
         title: "This Site",
@@ -40,7 +41,7 @@ const content = [
             <div>
                 <h1>RIPTA Dashboard</h1>
                 <h5>January 2018</h5>
-                <img id="ripta-background" src="pictures/ripta-animation.gif" alt="real-time RIPTA display animation" className="img-responsive"></img>
+                <img id="ripta-background" src={require("../pictures/ripta-animation.gif")} alt="real-time RIPTA display animation" className="img-responsive"></img>
                 <p>
                     RIPTA-Dashboard is Python dashboard for viewing real-time data from its
                     RIPTA's API. The data is first taken in and organized into a pandas
@@ -107,7 +108,7 @@ const content = [
                             <div className="carousel-inner text-center" role="listbox">
                                 <div className="item active">
                                     <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src="pictures/osmnx_nyc.png" alt="osmnx-grids of New York City by compass bearing"></img>
+                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_nyc.png")} alt="osmnx-grids of New York City by compass bearing"></img>
                                     </div>
                                     <div className="col-lg-6">
                                         <h1>Downtown Manhattan and Brooklyn</h1>
@@ -128,7 +129,7 @@ const content = [
                                 </div>
                                 <div className="item">
                                     <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src="pictures/osmnx_nyc_closeup.png" alt="closeup of osmnx-grids of New York City"></img>
+                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_nyc_closeup.png")} alt="closeup of osmnx-grids of New York City"></img>
                                     </div>
                                     <div className="col-lg-6">
                                         <h1>Closeup of downtown Manhattan and Brooklyn</h1>
@@ -146,7 +147,7 @@ const content = [
                                 </div>
                                 <div className="item">
                                     <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src="pictures/osmnx_williamsburg.png" alt="osmnx-grids of Williamsburg, Brooklyn"></img>
+                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_williamsburg.png")} alt="osmnx-grids of Williamsburg, Brooklyn"></img>
                                     </div>
                                 <div className="col-lg-6">
                                     <h1>Williamsburg, Brooklyn</h1>
@@ -246,8 +247,7 @@ const content = [
                     The lyrics for an artist's discography was obtained by using the python
                     library <a href="https://github.com/jameswenzel/pylyrics3">pylyrics3</a>,
                     which returns a nested dictionary of the artist's songs by album. From
-                    there I got the rhyme type (couplet, limerick, rondeau etc.) for for each song using the library
-                    <a href="https://github.com/hyperreality/Poetry-Tools">Poetry-tools</a>.
+                    there I got the rhyme type (couplet, limerick, rondeau etc.) for for each song using the library <a href="https://github.com/hyperreality/Poetry-Tools">Poetry-tools</a>.
                     Most importantly for this project I created the function <code>get_rhyme_ratio()</code> to get the rhyme ratio for each song
                     and then organized all of the relevant data into a <a href="https://pandas.pydata.org/">Pandas</a> Dataframe.
                 </p>
@@ -266,18 +266,17 @@ const content = [
                     This was the metric I used to try and determine how prosodically creative a song was.
                     </p>
                 <h4>Graphing the Results</h4>
-                    <p>After all the data was sent to the Pandas Dataframe, I then used a combination of <a href="https://matplotlib.org/index.html">Matplotlib</a>
-                    and <a href="https://seaborn.pydata.org/">Seaborn</a> to plot the results.
+                    <p>After all the data was sent to the Pandas Dataframe, I then used a combination of <a href="https://matplotlib.org/index.html">Matplotlib</a> and <a href="https://seaborn.pydata.org/">Seaborn</a> to plot the results.
                     </p>
                     <h5>Rhyme Ratio by Album over Time</h5>
-                    <img src="pictures/rhyme_ratio_scatter.png" alt="Scatter plot of rhyme ratio over time for The Kinks"></img>
-                    <img src="pictures/rhyme_ratio_violin.png" alt="Violin plot of rhyme ratio over time for The Kinks"></img>
-                    <img src="pictures/rhyme_ratio_mean.png" alt="Line plot of mean rhyme ratio over time for The Kinks"></img>
-                    <img src="pictures/rhyme_ratio_full.png" alt="Individual and mean plot of rhyme ratio over time for The Kinks"></img>
+                    <img src={require("../pictures/rhyme_ratio_scatter.png")} alt="Scatter plot of rhyme ratio over time for The Kinks"></img>
+                    <img src={require("../pictures/rhyme_ratio_violin.png")} alt="Violin plot of rhyme ratio over time for The Kinks"></img>
+                    <img src={require("../pictures/rhyme_ratio_mean.png")} alt="Line plot of mean rhyme ratio over time for The Kinks"></img>
+                    <img src={require("../pictures/rhyme_ratio_full.png" )}alt="Individual and mean plot of rhyme ratio over time for The Kinks"></img>
                     <h5>Rhyme Type by Album over Time</h5>
-                    <img src="pictures/rhyme_type.png" alt="Bar chart of rhyme type over time for The Kinks"></img>
+                    <img src={require("../pictures/rhyme_type.png")} alt="Bar chart of rhyme type over time for The Kinks"></img>
                     <h5>Instrumental vs Lyrical Song by album over Time</h5>
-                    <img src="pictures/instrumental.png" alt="Bar chart of instrumentality by album over time for The Kinks"></img>
+                    <img src={require("../pictures/instrumental.png")} alt="Bar chart of instrumentality by album over time for The Kinks"></img>
                 <h4>Conclusion</h4>
                     <p>Looking at the line graph for mean rhyme ratio over time I did validate my personal opinion that the 'Golden Era' Kinks (albums between 'Something Else (1967)' and 'Preservation Act 2 (1974)') were more creative than the rest of their work.
                     Upon looking at the mean rhyme ratio matched over the individual rhyme ratio violin plot I quickly realized however that the difference in mean rhyme ratios was negligible.

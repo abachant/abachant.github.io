@@ -6,7 +6,7 @@ function Resume() {
     <div>
         <div>
             <h1>Aubrey Bachant</h1>
-            <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/garrett-bachant-36bb77115/">LinkedIn</a> | <a href="https://github.com/abachant">GitHub</a></h4>
+            <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/aubrey-bachant-36bb77115/">LinkedIn</a> | <a hr  ef="https://github.com/abachant">GitHub</a></h4>
             <h4>Waltham, Massachusetts <small>(willing to relocate)</small></h4>
         </div>
             <hr />
@@ -46,7 +46,7 @@ function Resume() {
             </ul>
             <h3>Projects</h3>
                 <h4>In Progress</h4>
-                <h5><a href="https://github.com/Gbachant/Lane-Claim">Lane Claim</a></h5>
+                <h5><a href="https://github.com/abachant/Lane-Claim">Lane Claim</a></h5>
                     <ul>
                     <li>Lane Claim is a progress web app designed for tracking and reporting bikelane hazards, primarily cars.</li>
                     <li>Lane Claim is built with jQuery, Bootstrap, and SCSS</li>
