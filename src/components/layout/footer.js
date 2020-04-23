@@ -7,7 +7,7 @@ function getDate() {
 
 function Footer() {
   return(
-  <footer>©{getDate()} Aubrey Bachant</footer>
+  <footer className="global-footer">©{getDate()} Aubrey Bachant</footer>
   )
 }
 

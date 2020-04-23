@@ -20,13 +20,7 @@ code {
 }
 
 footer {
-  position: absolute;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  height: 40px;
-  bottom: 0;
-  flex: none;
+  color: #7f7f7f;
 }
 
 html {
@@ -43,6 +37,13 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.global-footer {
+  font-size: 15px;
+  padding-left: 20px;
+  bottom: 0;
+  flex: none;
 }
 
 .jumbotron {
