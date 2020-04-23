@@ -68,6 +68,9 @@ html {
 
 #about-background {
   background-image: url("./pictures/background.gif");
+  background-position: 25% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex: 1 1 auto;
   padding-top: 7%;
   padding-right: 15%
