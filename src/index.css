@@ -37,7 +37,12 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: auto;
+}
+
+.app-content {
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* bottom: 0; */
 }
 
 .global-footer {
