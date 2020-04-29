@@ -3,11 +3,11 @@ import React from 'react';
 class ProjectThumbnail extends React.Component {
     render() {
         return(
-            <div className="thumbnail col-md-4">
-                <div>
-                    <img src={this.props.imageSrc} alt={this.props.thumbnail} />
+            <div className="thumbnail img-thumbnail">
+                <div className="thumbnail-image-container">
+                    <img src={this.props.imageSrc} alt={this.props.thumbnail} className="thumbnail-image"/>
                 </div>
-                <div>
+                <div className="thumbnail-info-container">
                     <h3>{this.props.title}</h3>
                     <p>{this.props.description}</p>
                 </div>
