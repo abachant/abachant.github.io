@@ -3,7 +3,7 @@ import React from 'react';
 
 function Resume() {
   return(
-    <div id="resume">
+    <div className="page-content" id="resume">
         <div>
             <h1>Aubrey Bachant</h1>
             <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/aubrey-bachant-36bb77115/">LinkedIn</a> | <a href="https://github.com/abachant">GitHub</a></h4>

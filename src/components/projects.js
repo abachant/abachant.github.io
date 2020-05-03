@@ -52,7 +52,7 @@ class Projects extends React.Component {
 
   render(){
     return(
-      <div className="container-fluid thumbnail-container">
+      <div className="container-fluid thumbnail-container page-content">
         {this.createThumbnails()}
       </div>
     );

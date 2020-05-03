@@ -7,7 +7,7 @@ function ProjectDetail ({match}) {
     const project = content.find(object => {
         return object.url === match.params.url;
     })
-    return <div className="project-detail">{project.html}</div>
+    return <div className="page-content">{project.html}</div>
 
 }
 
