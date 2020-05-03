@@ -13,18 +13,19 @@ const content = [
             <div>
                 <h1>Github-Pages Portfolio</h1>
                 <h5>February 2018</h5>
-                <p>This site was built from scratch using Bootstrap. It is hosted though GitHub's lovely (and free) <a href="https://pages.github.com/">Pages.</a></p>
+                <p>This site was built from scratch in React. It is hosted though GitHub's lovely <a href="https://pages.github.com/">Pages.</a></p>
                 <p>
-                Needing a portfolio website and still being somewhat new to web
-                development I decided to build my own website. I initially planned on
-                building a GitHub-pages website in markdown with a jekyll theme.
-                I eventually decided that I would much rather have the full experience
-                of building a website so I decided to dive right in and build it from
-                the ground up in pure HTML, CSS and Bootstrap.
+                    After I changed my GitHub profile name the GitHub Pages portfolio hosted under my previous name no longer worked. So I decided 
+                    to utilize my new React skills to completely rebuild my new portfolio from the ground up. The previous site was written in basic html css and jQuery.
+                    Most of the content stayed the same and was able to be transferred from the old site easily, but I was able to greatly improve the structure and add new functionality with React. 
+                    Instead of just using raw html files I got the chance to implement my new knowledge of React-Router to dynamically create multiple pages. 
+                    This was a lot of fun since I had only used React before for single page applications. I also got the chance to reorganize and improve 
+                    the styling methodologies by implementing BEM. 
                 </p>
             </div>
             <hr></hr>
             <div>
+                <p><a href="https://github.com/abachant/Gbachant.github.io" className="footer">View previous project on Github</a></p>
                 <p><a href="https://github.com/abachant/abachant.github.io" className="footer">View project on GitHub</a></p>
             </div>
         </div>
