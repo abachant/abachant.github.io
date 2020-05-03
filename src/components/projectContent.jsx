@@ -44,7 +44,7 @@ const content = [
                 <h5>January 2018</h5>
                 <img id="ripta-background" src={require("../pictures/ripta-animation.gif")} alt="real-time RIPTA display animation" className="img-responsive"></img>
                 <p>
-                    RIPTA-Dashboard is Python dashboard for viewing real-time data from its
+                    RIPTA-Dashboard is a Python dashboard for viewing real-time data from its
                     RIPTA's API. The data is first taken in and organized into a pandas
                     dataframe then the current location of each bus is mapped along with
                     information about its speed, id, and bus route using Ploty's framework <a href="https://plot.ly/products/dash/">Dash</a>.

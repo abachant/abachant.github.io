@@ -5,7 +5,7 @@ function Resume() {
   return(
     <div className="page-content" id="resume">
         <div>
-            <h1>Aubrey Bachant</h1>
+            <h1>AUBREY LYNN BACHANT</h1>
             <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/aubrey-bachant-36bb77115/">LinkedIn</a> | <a href="https://github.com/abachant">GitHub</a></h4>
             <h4>Waltham, Massachusetts <small>(willing to relocate)</small></h4>
         </div>
@@ -27,15 +27,15 @@ function Resume() {
                     <li>Jest</li>
                 </ul>
                 <li>Firebase</li>
+                <li>SQL</li>
                 <li>Git/GitHub</li>
                 <li>Bash</li>
                 <li>HTML</li>
-                <ul>
-                    <li>Bootstrap</li>
-                </ul>
                 <li>CSS</li>
                 <ul>
+                    <li>Bootstrap</li>
                     <li>SASS</li>
+                    <li>BEM</li>
                 </ul>
                 <li>Tulip App Builder</li>
                 <li>Windows Office(Word, Excel, Powerpoint)</li>
@@ -48,46 +48,47 @@ function Resume() {
                 <h4>In Progress</h4>
                 <h5><a href="https://github.com/abachant/Lane-Claim">Lane Claim</a></h5>
                     <ul>
-                    <li>Lane Claim is a progress web app designed for tracking and reporting bikelane hazards, primarily cars.</li>
-                    <li>Lane Claim is built with jQuery, Bootstrap, and SCSS</li>
-                    <li>It uses Firebase <a href="https://firebase.google.com/products/realtime-database/">Realtime Database</a> and <a href="https://firebase.google.com/products/storage/">Storage</a> for its data and uses <a href="https://jestjs.io/">Jest</a> for its unit testing.</li>
+                        <li>Lane Claim is a progressive web app designed for tracking and reporting bikelane hazards, primarily cars</li>
+                        <li>It is built in React, styled with SCSS and Bootstrap, and uses Jest for unit testing</li>
+                        <li>It uses Firebase <a href="https://firebase.google.com/products/realtime-database/">Realtime Database</a> and <a href="https://firebase.google.com/products/storage/">Storage</a> for its data</li>
                     </ul>
                 <h4>Complete</h4>
-                <p>See <a href="projects.html">Projects page</a></p>
+                <p>See <a href="projects">Projects page</a></p>
             <h3>Experience</h3>
                 <h4><a href="https://www.dentsplysirona.com/en-us">Dentsply Sirona</a>, Waltham, MA</h4>
                 <h5>Production Technician II: (October 2018—Current)</h5>
                     <ul>
-                    <li>Responsible for receiving, verifying, packaging, and shipping customers' orders at fast pace</li>
-                    <li>Tulip App Administrator</li>
-                    <li>Use 5S, Lean, and Kaizen to increase efficiency and improve work methods</li>
+                        <li>Used LEAN principles to verify, manufacture, and ship dental implants</li>
+                        <li>Created and implemented 5S auditing application on own volition</li>
+                        <li>Tulip App Administrator</li>
                     </ul>
-                <h4><a href="https://americanrepertorytheater.org/">American Reperetory Theater - Havard</a>, Cambridge, MA</h4>
-                <h5>Temporary Scene Carpenter/Stagehand: (June 2018—August 2018 )</h5>
+                <h4><a href="https://dashride.com">Dashride</a>, New York, NY</h4>
+                <h5>Front End Developer Intern: (June 2018—August 2018 )</h5>
                     <ul>
-                    <li>Built scenery and props for theater productions following blueprints</li>
-                    <li>Loaded and unloaded props, scenery, and tools to and from the Loeb Theater</li>
+                        <li>Worked on redesign of ride booking tool in jQuery</li>
+                        <li>Worked together with a team of other developers</li>
+                        <li>Used RESTful APIs and Unit Testing</li>
                     </ul>
                 <h4><a href="http://billbachantbuilders.com/">Bachant Builders</a>, Wareham, MA</h4>
                 <h5>Foreman/Carpenter: (April 2009—November 2013 / November 2016—January 2018)</h5>
                     <ul>
-                    <li>Used SketchUp to design blueprints for mapping building dimensions</li>
-                    <li>Had experience doing finish carpentry and installing cabinets</li>
-                    <li>Duties included carpentry/woodworking, automotive repair, masonry, metalworking</li>
+                        <li>Used SketchUp to design blueprints for mapping building dimensions</li>
+                        <li>Had experience doing finish carpentry and installing cabinets</li>
+                        <li>Duties included carpentry/woodworking, automotive repair, masonry, metalworking</li>
                     </ul>
                 <h4><a href="https://www.facebook.com/Animal-Associates-1455735024727937/">Animal Associates</a>, Dartmouth, MA</h4>
                 <h5>Office Manager/Head Receptionist: (July 2015—November 2016)</h5>
                     <ul>
-                    <li>In charge of billing, operating the front office, and opening and closing the business each day</li>
-                    <li>Promoted from Head Receptionist to Office Manager in 5 months</li>
-                    <li>Volunteered at “Hearts 4 Paws” animal shelter once a week</li>
+                        <li>In charge of billing, operating the front office, and opening and closing the business each day</li>
+                        <li>Promoted from Head Receptionist to Office Manager in 5 months</li>
+                        <li>Volunteered at “Hearts 4 Paws” animal shelter once a week</li>
                     </ul>
                 <h4><a href="https://bachantsgunshop.com/">Bachant Gun Shop</a>, Lakeville, MA</h4>
                 <h5>Gunsmith: (October 2014—July 2015)</h5>
                     <ul>
-                    <li>Designed parts for fabrication using SketchUp CAD software</li>
-                    <li>Cleaned, fixed, and listed firearms for sale on various online platforms</li>
-                    <li>Found creative solutions to mechanical problems without clear instructions</li>
+                        <li>Designed parts for fabrication using SketchUp CAD software</li>
+                        <li>Cleaned, fixed, and listed firearms for sale on various online platforms</li>
+                        <li>Found creative solutions to mechanical problems without clear instructions</li>
                     </ul>
 
             <h3>Education</h3>
