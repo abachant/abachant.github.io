@@ -97,88 +97,10 @@ const content = [
             <div>
                 <h1>Analyzing Grids with OSMnx</h1>
                 <h5>February 2018</h5>
-                    <div className='container carousel'>
-                        <div id="carousel-example-generic" className="carousel slide">
-                            {/* <!-- Indicators --> */}
-                            <ol className="carousel-indicators">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            </ol>
-                            {/* <!-- Wrapper for slides --> */}
-                            <div className="carousel-inner text-center" role="listbox">
-                                <div className="item active">
-                                    <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_nyc.png")} alt="osmnx-grids of New York City by compass bearing"></img>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <h1>Downtown Manhattan and Brooklyn</h1>
-                                        <p className="carousel-subcaption">
-                                        Each group of perpendicular bearings is
-                                        represented by a different color. The grouping
-                                        of grids becomes immediately apparent. What is
-                                        most interesting are groups of grids that aren't
-                                        connected; though they are physically seperated
-                                        they still follow the same bearings. For
-                                        instance note the two purple bearing groups: one
-                                        at the Brooklyn side of the Brooklyn and
-                                        Manhattan bridges and the other to the far east
-                                        of Prospect Park in the bottom right corner of
-                                        the image.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_nyc_closeup.png")} alt="closeup of osmnx-grids of New York City"></img>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <h1>Closeup of downtown Manhattan and Brooklyn</h1>
-                                        <p className="carousel-subcaption">
-                                        Note how the purple bearings on the Brooklyn
-                                        end of the Manhattan and Brooklyn bridges merge
-                                        with and become part of the grids of the dark
-                                        orange bearings just south of the Brooklyn Navy
-                                        Yard. One of the main things I was interested in
-                                        doing with this project was analyzing the
-                                        'borders' of groups of grids and how their edges
-                                        met and bonded together.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="item">
-                                    <div className="col-lg-6 pull-right carousel-image">
-                                        <img className="img-responsive carousel-image" src={require("../pictures/osmnx_williamsburg.png")} alt="osmnx-grids of Williamsburg, Brooklyn"></img>
-                                    </div>
-                                <div className="col-lg-6">
-                                    <h1>Williamsburg, Brooklyn</h1>
-                                    <p className="carousel-subcaption">
-                                    A close up of Williamsburg, a neighborhood of
-                                    Brooklyn with a particularly interesting street
-                                    pattern. Note the rainbow pattern on the curved
-                                    sections of the Williamsburg Bridge and
-                                    Interstate 278 as it changes as its segments
-                                    change bearings.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <a className="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
                 <p>
                     This is project I have been interested in doing for quite some time now.
                     It was inspired by looking at the beautiful and chaotic mixing together
-                    of grids in New York City,
-                    <a href="https://www.google.com/maps/place/Brooklyn,+NY/@40.6496725,-73.9659865,12.5z/data=!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579">Brookyn</a>
-                    in particular. I became interested in finding a way to organize and
+                    of grids in New York City, <a href="https://www.google.com/maps/place/Brooklyn,+NY/@40.6496725,-73.9659865,12.5z/data=!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579">Brooklyn</a> in particular. I became interested in finding a way to organize and
                     analyze the relationships of the various grids based on angles of their
                     bearings. It wasn't until I found <a href="https://github.com/gboeing/osmnx">OSMnx</a>,
                     a Python package for working with and analyzing OpenStreetMap files made
@@ -212,12 +134,59 @@ const content = [
                     osmnx function, <code>osmnx.get_edge_colors_by_attr()</code>, to assign a
                     different color to each of the 90 groups of edges and eventually plot them.
                 </p>
-            </div>
+                <h5>Downtown Manhattan and Brooklyn</h5>
+                    <figure>
+                        <img src={require("../pictures/osmnx_nyc.png")} alt="osmnx-grids of New York City by compass bearing"></img>
+                        <figcaption className="col-lg-5">
+                        Each group of perpendicular bearings is
+                        represented by a different color. The grouping
+                        of grids becomes immediately apparent. What is
+                        most interesting are groups of grids that aren't
+                        connected; though they are physically seperated
+                        they still follow the same bearings. For
+                        instance note the two purple bearing groups: one
+                        at the Brooklyn side of the Brooklyn and
+                        Manhattan bridges and the other to the far east
+                        of Prospect Park in the bottom right corner of
+                        the image.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h5>Closeup of downtown Manhattan and Brooklyn</h5>
+                    <figure>
+                        <img src={require("../pictures/osmnx_nyc_closeup.png")} alt="closeup of osmnx-grids of New York City"></img>
+                        <figcaption className="col-lg-5">
+                        Note how the purple bearings on the Brooklyn
+                        end of the Manhattan and Brooklyn bridges merge
+                        with and become part of the grids of the dark
+                        orange bearings just south of the Brooklyn Navy
+                        Yard. One of the main things I was interested in
+                        doing with this project was analyzing the
+                        'borders' of groups of grids and how their edges
+                        met and bonded together.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h5>Williamsburg, Brooklyn</h5>
+                    <figure>
+                        <img src={require("../pictures/osmnx_williamsburg.png")} alt="osmnx-grids of Williamsburg, Brooklyn"></img>
+                        <figcaption className="col-lg-5" >
+                        A close up of Williamsburg, a neighborhood of
+                        Brooklyn with a particularly interesting street
+                        pattern. Note the rainbow pattern on the curved
+                        sections of the Williamsburg Bridge and
+                        Interstate 278 as it changes as its segments
+                        change bearings.
+                        </figcaption>
+                    </figure>
+                </div>
             <hr></hr>
             <div>
+                <a href="https://github.com/abachant/osmnx-grid" className="footer">View project on GitHub</a><br/>
+                <a href="https://github.com/abachant/osmnx-examples/blob/add-bearing-analysis-example/notebooks/17-edge-bearing-analysis.ipynb">View Python Jupyter Notebook example on GitHub</a><br/>
                 <a href="https://github.com/gboeing/osmnx/pull/135/files">View contribution to OSMnx sourcecode on GitHub</a>
-                <a href="https://github.com/abachant/osmnx-examples/blob/add-bearing-analysis-example/notebooks/17-edge-bearing-analysis.ipynb">View Python Jupyter Notebook example on GitHub</a>
-                <a href="https://github.com/abachant/osmnx-grid" className="footer">View project on GitHub</a>
             </div>
         </div>
     },
