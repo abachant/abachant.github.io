@@ -9,7 +9,7 @@ function Resume() {
             <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/aubrey-bachant-36bb77115/">LinkedIn</a> | <a href="https://github.com/abachant">GitHub</a></h4>
             <h4>Waltham, Massachusetts <small>(willing to relocate)</small></h4>
         </div>
-            <hr />
+        <hr />
         <div>
             <h3>Skills</h3>
             <ul>
@@ -45,6 +45,7 @@ function Resume() {
                 <li>Construction/Carpentry/Metalworking</li>
             </ul>
             <h3>Projects</h3>
+                <div className="resume-subsection">
                 <h4>In Progress</h4>
                 <h5><a href="https://github.com/abachant/Lane-Claim">Lane Claim</a></h5>
                     <ul>
@@ -54,7 +55,9 @@ function Resume() {
                     </ul>
                 <h4>Complete</h4>
                 <p>See <a href="projects">Projects page</a></p>
+                </div>
             <h3>Experience</h3>
+                <div className="resume-subsection">
                 <h4><a href="https://www.dentsplysirona.com/en-us">Dentsply Sirona</a>, Waltham, MA</h4>
                 <h5>Production Technician II: (October 2018—Current)</h5>
                     <ul>
@@ -90,7 +93,7 @@ function Resume() {
                         <li>Cleaned, fixed, and listed firearms for sale on various online platforms</li>
                         <li>Found creative solutions to mechanical problems without clear instructions</li>
                     </ul>
-
+                </div>
             <h3>Education</h3>
                 <h4>Bristol Community College, Fall River, MA (2015—)</h4>
                 <ul>
@@ -101,7 +104,7 @@ function Resume() {
                     <li>Advance Placement and Honors courses</li>
                 </ul>
         </div>
-            <hr />
+        <hr />
         <div>
             <a href="https://docs.google.com/document/d/1d9vJS8ZktSJLMsFDTyhtcAKI29qBRL1bIK5-GjqzBpE/edit?usp=sharing">View Resume on Google Docs</a>
             <br />
