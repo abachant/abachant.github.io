@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a6e4204.chunk.css",
+    "main.js": "/static/js/main.a73105e1.chunk.js",
+    "main.js.map": "/static/js/main.a73105e1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0f11ef4a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0f11ef4a.js.map",
+    "static/js/2.9be2f9c8.chunk.js": "/static/js/2.9be2f9c8.chunk.js",
+    "static/js/2.9be2f9c8.chunk.js.map": "/static/js/2.9be2f9c8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3b8dd20e2ee3175fdbd0b73af2b754bd.js": "/precache-manifest.3b8dd20e2ee3175fdbd0b73af2b754bd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2a6e4204.chunk.css.map": "/static/css/main.2a6e4204.chunk.css.map",
+    "static/js/2.9be2f9c8.chunk.js.LICENSE.txt": "/static/js/2.9be2f9c8.chunk.js.LICENSE.txt",
+    "static/media/Aubrey_Bachant_Resume.pdf": "/static/media/Aubrey_Bachant_Resume.1948e8c0.pdf",
+    "static/media/index.css": "/static/media/background.c4c172ec.gif",
+    "static/media/instrumental.png": "/static/media/instrumental.7eaefe39.png",
+    "static/media/osmnx_nyc.png": "/static/media/osmnx_nyc.a7ae3ae9.png",
+    "static/media/osmnx_nyc_closeup.png": "/static/media/osmnx_nyc_closeup.67777766.png",
+    "static/media/osmnx_nyc_crop.png": "/static/media/osmnx_nyc_crop.9d354dac.png",
+    "static/media/osmnx_williamsburg.png": "/static/media/osmnx_williamsburg.b5189c3a.png",
+    "static/media/rhyme_ratio_full.png": "/static/media/rhyme_ratio_full.95e86c4c.png",
+    "static/media/rhyme_ratio_mean.png": "/static/media/rhyme_ratio_mean.a0aec0ff.png",
+    "static/media/rhyme_ratio_scatter.png": "/static/media/rhyme_ratio_scatter.6bb91319.png",
+    "static/media/rhyme_ratio_violin.png": "/static/media/rhyme_ratio_violin.392cbe4a.png",
+    "static/media/rhyme_ratio_violin_thumbnail.png": "/static/media/rhyme_ratio_violin_thumbnail.58a2095c.png",
+    "static/media/rhyme_type.png": "/static/media/rhyme_type.0c08c21d.png",
+    "static/media/ripta-animation.gif": "/static/media/ripta-animation.02bae494.gif",
+    "static/media/ripta-dashboard.png": "/static/media/ripta-dashboard.e012080a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f11ef4a.js",
+    "static/js/2.9be2f9c8.chunk.js",
+    "static/css/main.2a6e4204.chunk.css",
+    "static/js/main.a73105e1.chunk.js"
+  ]
+}
