@@ -7,7 +7,9 @@ function Navbar() {
       <div className="container-fluid">
         <div className="navbar-header">
           <Link to="/">
-            <div className="navbar-brand" >AB</div>
+            <div className="navbar-brand">
+              <img src="favicon.ico" alt="favicon"></img>
+            </div>
           </Link>
         </div>
         <ul className="nav">
@@ -15,7 +17,7 @@ function Navbar() {
             <li className="nav-item nav-link">Resume</li>
           </Link>
           <Link to="/projects">
-            <li className="nav-item nav-link" >Projects</li>
+            <li className="nav-item nav-link">Projects</li>
           </Link>
         </ul>
       </div>

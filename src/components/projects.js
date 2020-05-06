@@ -14,7 +14,7 @@ class Projects extends React.Component {
           id: "1",
           url: "abachant-github-pages",
           description: "A custom website built from scratch",
-          imageSrc: "logo192.png",
+          imageSrc: "android-chrome-512x512.png",
           imageAlt: "thumbnail",
         },
         {
