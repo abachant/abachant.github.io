@@ -45,7 +45,7 @@ function Resume() {
                 <li>Construction/Carpentry/Metalworking</li>
             </ul>
             <h3>Projects</h3>
-                <div className="resume-subsection">
+            <div className="resume-subsection">
                 <h4>In Progress</h4>
                 <h5><a href="https://github.com/abachant/Lane-Claim">Lane Claim</a></h5>
                     <ul>
@@ -55,14 +55,14 @@ function Resume() {
                     </ul>
                 <h4>Complete</h4>
                 <p>See <a href="projects">Projects page</a></p>
-                </div>
+            </div>
             <h3>Experience</h3>
-                <div className="resume-subsection">
+            <div className="resume-subsection">
                 <h4><a href="https://www.dentsplysirona.com/en-us">Dentsply Sirona</a>, Waltham, MA</h4>
                 <h5>Production Technician II: (October 2018—Current)</h5>
                     <ul>
                         <li>Used LEAN principles to verify, manufacture, and ship dental implants</li>
-                        <li>Created and implemented 5S auditing application on own volition</li>
+                        <li>Designed and created 5S auditing application on own volition</li>
                         <li>Tulip App Administrator</li>
                     </ul>
                 <h4><a href="https://dashride.com">Dashride</a>, New York, NY</h4>
@@ -93,8 +93,9 @@ function Resume() {
                         <li>Cleaned, fixed, and listed firearms for sale on various online platforms</li>
                         <li>Found creative solutions to mechanical problems without clear instructions</li>
                     </ul>
-                </div>
+            </div>
             <h3>Education</h3>
+            <div className="resume-subsection">
                 <h4>Bristol Community College, Fall River, MA (2015—)</h4>
                 <ul>
                     <li>General Studies</li>
@@ -103,12 +104,13 @@ function Resume() {
                 <ul>
                     <li>Advance Placement and Honors courses</li>
                 </ul>
+            </div>
         </div>
         <hr />
         <div>
-            <a href="https://docs.google.com/document/d/1d9vJS8ZktSJLMsFDTyhtcAKI29qBRL1bIK5-GjqzBpE/edit?usp=sharing">View Resume on Google Docs</a>
+            <a href="https://docs.google.com/document/d/1L6P6jkl4q3_AXfLKtrq0fPq4rQqa8FdX_cPikwOKdus/edit?usp=sharing">View Resume on Google Docs</a>
             <br />
-            <a href="pictures/Garrett-Bachant-Resume.pdf" download>Download Resume as PDF</a>
+            <a href={require("../pictures/Aubrey_Bachant_Resume.pdf")} download>Download Resume as PDF</a>
         </div>   
     </div>
   )
