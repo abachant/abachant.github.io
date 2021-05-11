@@ -7,7 +7,7 @@ function Resume() {
         <div>
             <h1>AUBREY LYNN BACHANT</h1>
             <h4><a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> | 774-400-8759 | <a href="https://www.linkedin.com/in/aubrey-bachant-36bb77115/">LinkedIn</a> | <a href="https://github.com/abachant">GitHub</a></h4>
-            <h4>Waltham, Massachusetts <small>(willing to relocate)</small></h4>
+            <h4>Boston, Massachusetts <small>(willing to relocate)</small></h4>
         </div>
         <hr />
         <div>
@@ -111,7 +111,7 @@ function Resume() {
             <a href="https://docs.google.com/document/d/1L6P6jkl4q3_AXfLKtrq0fPq4rQqa8FdX_cPikwOKdus/edit?usp=sharing">View Resume on Google Docs</a>
             <br />
             <a href={require("../pictures/Aubrey_Bachant_Resume.pdf")} download>Download Resume as PDF</a>
-        </div>   
+        </div>
     </div>
   )
 }
