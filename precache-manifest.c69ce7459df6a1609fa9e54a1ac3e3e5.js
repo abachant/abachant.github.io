@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ba6f1a86131f5a3f29074890eb613f3c",
+    "revision": "1ec7f95178271ad23369473083c355ac",
     "url": "/index.html"
   },
   {
-    "revision": "1ba0da6df4464eebda7f",
-    "url": "/static/css/main.2a6e4204.chunk.css"
+    "revision": "d9ec20956d3a295c8c2d",
+    "url": "/static/css/main.b41757d1.chunk.css"
   },
   {
     "revision": "61d66b72d85e1d142096",
@@ -16,16 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9be2f9c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ba0da6df4464eebda7f",
-    "url": "/static/js/main.71454f9b.chunk.js"
+    "revision": "d9ec20956d3a295c8c2d",
+    "url": "/static/js/main.82f26be3.chunk.js"
   },
   {
     "revision": "2c9cc013cafdb4278fcf",
     "url": "/static/js/runtime-main.0f11ef4a.js"
   },
   {
-    "revision": "1948e8c0d203ce9a9016593287a0bbe0",
-    "url": "/static/media/Aubrey_Bachant_Resume.1948e8c0.pdf"
+    "revision": "b15f9d85ca95e4f5074727f8f0a3770a",
+    "url": "/static/media/Aubrey_Bachant_Resume.b15f9d85.pdf"
+  },
+  {
+    "revision": "643292f5628483b666267947d894b330",
+    "url": "/static/media/Hack_Reactor_Certificate.643292f5.png"
   },
   {
     "revision": "c4c172ec39e008114d9cf0ed5cd27e70",
