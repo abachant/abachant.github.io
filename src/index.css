@@ -43,6 +43,10 @@ html {
   overflow-x: hidden;
 }
 
+.certificate {
+  height: 200px;
+}
+
 .global-footer {
   font-size: 15px;
   padding-left: 20px;
