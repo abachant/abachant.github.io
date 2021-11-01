@@ -273,12 +273,11 @@ const content = [
                 <div>
                     <h1>Catwalk: A Clothing Retail Web Portal</h1>
                     <h5>March 2021</h5>
-                    {/* <img
-                        id="catwalk-content"
+                    <img
                         src={require("../pictures/catwalk-product.png")}
                         alt="Catwalk clothing retailer portal"
-                        className="img-responsive">
-                    </img> */}
+                        className="img-responsive img-content">
+                    </img>
                     <p>
                         <a href="http://54.204.74.127:8080/products/37315">Catwalk</a> is a clothing retailer web portal
                         built using React that is hosted by node server using express.
@@ -316,6 +315,11 @@ const content = [
                         cause a function to filter through the objects in the API response.
                         AFrom there they were able to be sorted and rendered just as the non filtered questions were.
                     </p>
+                    <img
+                        src={require("../pictures/catwalk-QA.png")}
+                        alt="Catwalk clothing retailer questions and answers component"
+                        className="img-responsive img-content">
+                    </img>
                 </div>
                 <hr></hr>
                 <div>

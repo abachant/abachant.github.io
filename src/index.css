@@ -65,6 +65,10 @@ html {
   transform: scale(1.05);
 }
 
+.img-content{
+  width: 100%;
+}
+
 .jumbotron {
   opacity: 0.9;
   font-size: 1.3rem;
