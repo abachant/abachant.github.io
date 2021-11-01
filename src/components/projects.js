@@ -40,6 +40,14 @@ class Projects extends React.Component {
           description: "A Jupyter Notebook for analyzing stylistic habits of songwriters",
           imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
           imageAlt: "thumbnail",
+        },
+        {
+          title: "Catwalk",
+          id: "5",
+          url: "catwalk",
+          description: "A clothing retailer webportal built in React",
+          imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
+          imageAlt: "thumbnail",
         }
       ]
     };
