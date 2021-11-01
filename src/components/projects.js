@@ -40,6 +40,14 @@ class Projects extends React.Component {
           description: "A Jupyter Notebook for analyzing stylistic habits of songwriters",
           imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
           imageAlt: "thumbnail",
+        },
+        {
+          title: "Catwalk",
+          id: "5",
+          url: "catwalk",
+          description: "A clothing retailer webportal built in React",
+          imageSrc: require("../pictures/catwalk-thumbnail.png"),
+          imageAlt: "thumbnail",
         }
       ]
     };
@@ -47,11 +55,18 @@ class Projects extends React.Component {
 
   // Create a <ProjectThumbnail /> for each object in the state
   createThumbnails() {
-    return this.state.projectThumbnails.reverse().map(object => <Link to={`/projects/${object.url}`} className="col-lg-4 col-md-6 thumbnail"><ProjectThumbnail title={object.title} description={object.description} imageSrc={object.imageSrc} imageAlt={object.imageAlt}/></Link>)
+    return this.state.projectThumbnails.reverse().map(object =>
+      <Link to={`/projects/${object.url}`} className="col-lg-4 col-md-6 thumbnail">
+        <ProjectThumbnail
+          title={object.title}
+          description={object.description}
+          imageSrc={object.imageSrc}
+          imageAlt={object.imageAlt} />
+      </Link>)
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <div className="container-fluid thumbnail-container page-content">
         {this.createThumbnails()}
       </div>
