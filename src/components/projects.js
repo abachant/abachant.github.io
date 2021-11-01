@@ -46,7 +46,7 @@ class Projects extends React.Component {
           id: "5",
           url: "catwalk",
           description: "A clothing retailer webportal built in React",
-          imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
+          imageSrc: require("../pictures/catwalk-thumbnail.png"),
           imageAlt: "thumbnail",
         }
       ]
