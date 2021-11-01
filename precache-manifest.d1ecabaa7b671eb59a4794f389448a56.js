@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ec7f95178271ad23369473083c355ac",
+    "revision": "b8ef7574a6e7946cd35c058173dfe8eb",
     "url": "/index.html"
   },
   {
-    "revision": "d9ec20956d3a295c8c2d",
-    "url": "/static/css/main.b41757d1.chunk.css"
+    "revision": "3a19c38f0c5b949e759e",
+    "url": "/static/css/main.832af151.chunk.css"
   },
   {
     "revision": "61d66b72d85e1d142096",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9be2f9c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d9ec20956d3a295c8c2d",
-    "url": "/static/js/main.82f26be3.chunk.js"
+    "revision": "3a19c38f0c5b949e759e",
+    "url": "/static/js/main.716678c5.chunk.js"
   },
   {
     "revision": "2c9cc013cafdb4278fcf",
@@ -34,6 +34,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c4c172ec39e008114d9cf0ed5cd27e70",
     "url": "/static/media/background.c4c172ec.gif"
+  },
+  {
+    "revision": "767fce527e7e90c119113d8c0b4d62c7",
+    "url": "/static/media/catwalk-QA.767fce52.png"
+  },
+  {
+    "revision": "d252f70175f3695cf643e52a23a6e423",
+    "url": "/static/media/catwalk-product.d252f701.png"
+  },
+  {
+    "revision": "a6b2ec32f6de606360c3d4cabdf5e022",
+    "url": "/static/media/catwalk-thumbnail.a6b2ec32.png"
   },
   {
     "revision": "7eaefe39c199f042dafed03b24e72c3a",
