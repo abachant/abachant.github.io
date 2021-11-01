@@ -273,12 +273,54 @@ const content = [
                 <div>
                     <h1>Catwalk: A Clothing Retail Web Portal</h1>
                     <h5>March 2021</h5>
+                    {/* <img
+                        id="catwalk-content"
+                        src={require("../pictures/catwalk-product.png")}
+                        alt="Catwalk clothing retailer portal"
+                        className="img-responsive">
+                    </img> */}
                     <p>
+                        <a href="http://54.204.74.127:8080/products/37315">Catwalk</a> is a clothing retailer web portal
+                        built using React that is hosted by node server using express.
                         This was a project I worked on at Hack Reactor on team with 2 other full stack developers. Our goal
-                        was to create a frontend for a clothing retailer website. This front end would serve the need to
-                        show general infromation about products such as sizes and colors available, a section for questions
-                        and answers, ratings and even the ability to track the clicks of all incoming users. After getting the primary boilerplate set up, I worked on the Questions and Answers widget primarily.
+                        was to create a frontend that would allow customers to interact with clothing products. This front
+                        shows infromation about products such as sizes and colors available, a section for questions
+                        and answers, and ratings. Catwalk also the ability to track the clicks of all incoming users.
+                        Besides getting the primary boilerplate set up, I worked on the Questions and Answers widget
+                        primarily.
                     </p>
+                    <h4>Setting up Catwalk</h4>
+                    <p>
+                        All the product information including sizes, quantity, photos etc comes from an API that requires a
+                        key for authentication.
+                        Inorder to get access to this data while hiding the key from any users catwalk
+                        had to have a very basic proxy server which would handle calling that API and return the necessary
+                        static web pages. To keep the API key secret, it is stored on the server as an .env variable. This proxy is currently hosted on an AWS EC2 instance.
+                    </p>
+                    <h4>Questions and Answers</h4>
+                    <p>
+                        The feature that I fully owned was the Questions and Answers section.
+                        For each product users are able to ask and answer questions about the product.
+                        Questions can then be voted as useful or flagged if inappropriate and users can search questions
+                        for keywords.
+                    </p>
+                    <p>
+                        One of the bigger challenges I ran into was creating feature to allow users to search questions.
+                        Filtering of questions need to be done in real time as the user typed into the search bar.
+                        As a user typed into a search bar I had to make sure that the list of questions was filtered in
+                        real time based on their input.
+                        Since the amount of quesitons was relatively small, ie never above 100, I decided that I wouldn't
+                        need to use any debouncing yet. Although I did add condition to only search once the input string
+                        was atleast three characters long.
+                        After the user input in the search field reached a string of over 3 characters, every change would
+                        cause a function to filter through the objects in the API response.
+                        AFrom there they were able to be sorted and rendered just as the non filtered questions were.
+                    </p>
+                </div>
+                <hr></hr>
+                <div>
+                    <p><a href="http://54.204.74.127:8080/products/37315" className="footer">View Catwalk Demo</a></p>
+                    <p><a href="https://github.com/abachant/FEC" className="footer">View sourcecode on GitHub</a></p>
                 </div>
             </div>
 
