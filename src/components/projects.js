@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ProjectThumbnail from './projectThumbnail.js';
+import SearchBar from './searchBar.js';
 
 
 class Projects extends React.Component {
@@ -68,6 +69,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="container-fluid thumbnail-container page-content">
+        <SearchBar />
         {this.createThumbnails()}
       </div>
     );
