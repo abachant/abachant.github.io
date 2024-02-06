@@ -5,15 +5,14 @@ function SearchBar(props) {
   const handleSearchTextChange = (e) => setSearchText(e.target.value);
 
   return (
-    <form>
-      <label>
-        Search:
-        <input
-          type="text"
-          value={searchText}
-          onChange={handleSearchTextChange}
-        />
-      </label>
+    <form className="search-bar-container">
+      <input
+        placeholder="Search technologies, frameworks etc."
+        className="search-bar-input"
+        type="text"
+        value={searchText}
+        onChange={handleSearchTextChange}
+      />
     </form>
   );
 }
