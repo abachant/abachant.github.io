@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 function SearchBar(props) {
   const [searchText, setSearchText] = useState("");
+  const handleSearchTextChange = (e) => setSearchText(e.target.value);
+
   return (
     <form>
       <label>
@@ -9,7 +11,7 @@ function SearchBar(props) {
         <input
           type="text"
           value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={handleSearchTextChange}
         />
       </label>
     </form>
