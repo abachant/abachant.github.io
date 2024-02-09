@@ -8,7 +8,6 @@ function SearchBar(props) {
     relevantProjects = projectContent.filter((project) =>
       project.technology.includes(textToSearch),
     );
-    console.log("filterdlistg", relevantProjects);
   };
   const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
@@ -23,6 +22,9 @@ function SearchBar(props) {
         type="text"
         value={searchText}
         onChange={handleSearchTextChange}
+        onKeyPress={(e) => {
+          e.key === "Enter" && e.preventDefault();
+        }}
       />
     </form>
   );
