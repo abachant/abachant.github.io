@@ -19,7 +19,7 @@ function SearchBar(props) {
       <input
         placeholder="Search technologies, frameworks etc."
         className="search-bar-input"
-        type="text"
+        type="search"
         value={searchText}
         onChange={handleSearchTextChange}
         onKeyPress={(e) => {
