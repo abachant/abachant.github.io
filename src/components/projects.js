@@ -9,19 +9,22 @@ function Projects(props) {
   const [visibleProjects, setVisibleProjects] = useState([]);
   // Create a <ProjectThumbnail /> for each object in the state
   const createThumbnails = () => {
-    return projectContent.map((object) => (
-      <Link
-        to={`/projects/${object.url}`}
-        className="col-lg-4 col-md-6 thumbnail"
-      >
-        <ProjectThumbnail
-          title={object.title}
-          description={object.description}
-          imageSrc={object.imageSrc}
-          imageAlt={object.imageAlt}
-        />
-      </Link>
-    ));
+    for (const index in visibleProjects) {
+      const project = projectContent[index];
+      return (
+        <Link
+          to={`/projects/${project.url}`}
+          className="col-lg-4 col-md-6 thumbnail"
+        >
+          <ProjectThumbnail
+            title={project.title}
+            description={project.description}
+            imageSrc={project.imageSrc}
+            imageAlt={project.imageAlt}
+          />
+        </Link>
+      );
+    }
   };
 
   // Filter relevant project indices to state
