@@ -5,9 +5,9 @@ const content = [
     title: "This Site",
     id: "1",
     url: "abachant-github-pages",
-    description: "",
-    thumbnailSrc: "",
-    thumbnailAlt: "",
+    description: "A custom website built from scratch",
+    imageSrc: "android-chrome-512x512.png",
+    imageAlt: "thumbnail",
     technology: [
       "javascript",
       "react",
@@ -68,9 +68,9 @@ const content = [
     title: "RIPTA Dashboard",
     id: "2",
     url: "RIPTA-dashboard",
-    description: "",
-    thumbnailSrc: "",
-    thumbnailAlt: "",
+    description: "Realtime dashboard using RIPTA's API",
+    imageSrc: require("../pictures/ripta-dashboard.png"),
+    imageAlt: "thumbnail",
     technology: ["python", "plotly", "api", "rest"],
     html: (
       <div>
@@ -143,9 +143,9 @@ const content = [
     title: "OSMnx Grid Analysis",
     id: "3",
     url: "osmnx-grids",
-    description: "",
-    thumbnailSrc: "",
-    thumbnailAlt: "",
+    description: "Using OSMnx to analyze the grids of New York City",
+    imageSrc: require("../pictures/osmnx_nyc_crop.png"),
+    imageAlt: "thumbnail",
     technology: ["python", "plotly", "osm", "jupyter"],
     html: (
       <div>
@@ -273,9 +273,10 @@ const content = [
     title: "Rhyme Scheme Analysis",
     id: "4",
     url: "rhyme-scheme",
-    description: "",
-    thumbnailSrc: "",
-    thumbnailAlt: "",
+    description:
+      "A Jupyter Notebook for analyzing stylistic habits of songwriters",
+    imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
+    imageAlt: "thumbnail",
     technology: ["python", "pandas", "jupyter", "git", "matplotlib"],
     html: (
       <div>
@@ -400,13 +401,22 @@ const content = [
     ),
   },
   {
-    title: "Catwalk: Clothing Retailer Website",
+    title: "Catwalk",
     id: "5",
     url: "catwalk",
-    description: "",
-    thumbnailSrc: "",
-    thumbnailAlt: "",
-    technology: ["react", "node", "api", "rest", "aws", "postgres", "sql", "microservices"],
+    description: "A clothing retailer webportal built in React",
+    imageSrc: require("../pictures/catwalk-thumbnail.png"),
+    imageAlt: "thumbnail",
+    technology: [
+      "react",
+      "node",
+      "api",
+      "rest",
+      "aws",
+      "postgres",
+      "sql",
+      "microservices",
+    ],
     html: (
       <div>
         <div>
