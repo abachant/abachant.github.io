@@ -7,11 +7,13 @@ import projectContent from "./projectContent.jsx";
 
 function Projects(props) {
   const [visibleProjects, setVisibleProjects] = useState([]);
+
   // Create a <ProjectThumbnail /> for each object in the state
   const createThumbnails = () => {
-    for (const index in visibleProjects) {
+    const thumbnails = [];
+    visibleProjects.forEach((index) => {
       const project = projectContent[index];
-      return (
+      thumbnails.push(
         <Link
           to={`/projects/${project.url}`}
           className="col-lg-4 col-md-6 thumbnail"
@@ -22,9 +24,10 @@ function Projects(props) {
             imageSrc={project.imageSrc}
             imageAlt={project.imageAlt}
           />
-        </Link>
+        </Link>,
       );
-    }
+    });
+    return thumbnails;
   };
 
   // Filter relevant project indices to state
