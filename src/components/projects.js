@@ -24,6 +24,7 @@ function Projects(props) {
     ));
   };
 
+  // Filter relevant project indices to state
   const searchProjects = (textToSearch) => {
     let relevantProjects = [];
     for (let i = 0; i < projectContent.length; i++) {
