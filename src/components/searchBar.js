@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import projectContent from "./projectContent";
+import React from "react";
 
-function SearchBar({ searchProjects }) {
-  const [searchText, setSearchText] = useState("");
+function SearchBar({ searchProjects, searchText, setSearchText }) {
   const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
     searchProjects(e.target.value);

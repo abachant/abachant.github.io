@@ -7,6 +7,7 @@ import projectContent from "./projectContent.jsx";
 
 function Projects(props) {
   const [visibleProjects, setVisibleProjects] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
   // Create a <ProjectThumbnail /> for each object in the state
   const createThumbnails = () => {
@@ -43,7 +44,11 @@ function Projects(props) {
 
   return (
     <div className="container-fluid thumbnail-container page-content">
-      <SearchBar searchProjects={searchProjects} />
+      <SearchBar
+        searchProjects={searchProjects}
+        searchText={searchText}
+        setSearchText={setSearchText}
+      />
       {createThumbnails()}
     </div>
   );
