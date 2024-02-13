@@ -9,29 +9,9 @@ function Projects(props) {
   const [visibleProjects, setVisibleProjects] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  // Create a <ProjectThumbnail /> for each object in the state
-  const createThumbnails = () => {
-    const thumbnails = [];
-    if (searchText) {
-      visibleProjects.forEach((index) => {
-        const project = projectContent[index];
-        thumbnails.push(
-          <Link
-            to={`/projects/${project.url}`}
-            className="col-lg-4 col-md-6 thumbnail"
-          >
-            <ProjectThumbnail
-              title={project.title}
-              description={project.description}
-              imageSrc={project.imageSrc}
-              imageAlt={project.imageAlt}
-            />
-          </Link>,
-        );
-      });
-      return thumbnails;
-    }
-    return projectContent.map((project) => (
+  // Create a <ProjectThumbnail /> from an object
+  const createThumbnail = (project) => {
+    return (
       <Link
         to={`/projects/${project.url}`}
         className="col-lg-4 col-md-6 thumbnail"
@@ -43,10 +23,23 @@ function Projects(props) {
           imageAlt={project.imageAlt}
         />
       </Link>
-    ));
+    );
   };
 
-  // Filter relevant project indices to state
+  // Render a <ProjectThumbnail /> for each object in the state
+  const renderThumbnails = () => {
+    const thumbnails = [];
+    if (searchText) {
+      visibleProjects.forEach((index) => {
+        const visibleProject = projectContent[index];
+        thumbnails.push(createThumbnail(visibleProject));
+      });
+      return thumbnails;
+    }
+    return projectContent.map((project) => createThumbnail(project));
+  };
+
+  // Filter project indices relevant to search to state
   const searchProjects = (textToSearch) => {
     let relevantProjects = [];
     for (let i = 0; i < projectContent.length; i++) {
@@ -64,7 +57,7 @@ function Projects(props) {
         searchText={searchText}
         setSearchText={setSearchText}
       />
-      {createThumbnails()}
+      {renderThumbnails()}
     </div>
   );
 }
