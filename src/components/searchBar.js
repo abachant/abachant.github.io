@@ -5,6 +5,11 @@ function SearchBar({ searchProjects, searchText, setSearchText }) {
     setSearchText(e.target.value);
     searchProjects(e.target.value);
   };
+  const handleKeyPressEnter = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  };
 
   return (
     <form className="search-bar-container">
@@ -14,9 +19,7 @@ function SearchBar({ searchProjects, searchText, setSearchText }) {
         type="search"
         value={searchText}
         onChange={handleSearchTextChange}
-        onKeyPress={(e) => {
-          e.key === "Enter" && e.preventDefault();
-        }}
+        onKeyPress={handleKeyPressEnter}
       />
     </form>
   );
