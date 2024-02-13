@@ -2,8 +2,9 @@ import React from "react";
 
 function SearchBar({ searchProjects, searchText, setSearchText }) {
   const handleSearchTextChange = (e) => {
+    const normalizedSearchText = e.target.value.toLowerCase();
     setSearchText(e.target.value);
-    searchProjects(e.target.value);
+    searchProjects(normalizedSearchText);
   };
 
   return (
