@@ -1,10 +1,14 @@
 import React from "react";
+import debounce from "lodash/debounce";
 
 function SearchBar({ searchProjects, searchText, setSearchText }) {
+  const debouncedSearchProjects = debounce(searchProjects, 200);
+
   const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
-    searchProjects(e.target.value);
+    debouncedSearchProjects(e.target.value);
   };
+
   const handleKeyPressEnter = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
