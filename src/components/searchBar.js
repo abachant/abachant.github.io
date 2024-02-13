@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import debounce from "lodash/debounce";
 
 function SearchBar({ searchProjects, searchText, setSearchText }) {
-  const debouncedSearchProjects = debounce(searchProjects, 200);
+  const debouncedSearchProjects = useCallback(
+    debounce((query) => searchProjects(query), 200),
+    [],
+  );
+
+  useEffect(() => {
+    return () => {
+      debouncedSearchProjects.cancel();
+    };
+  }, [debouncedSearchProjects]);
 
   const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
