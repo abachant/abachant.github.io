@@ -40,10 +40,11 @@ function Projects(props) {
   };
 
   // Filter project indices relevant to search to state
-  const searchProjects = (textToSearch) => {
+  const searchProjects = (query) => {
+    const normalizedQuery = query.toLowerCase();
     let relevantProjects = [];
     for (let i = 0; i < projectContent.length; i++) {
-      if (projectContent[i].technology.includes(textToSearch)) {
+      if (projectContent[i].technology.includes(normalizedQuery)) {
         relevantProjects.push(i);
       }
     }
