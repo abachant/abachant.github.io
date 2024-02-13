@@ -41,6 +41,7 @@ html {
 .app-content {
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .certificate {
