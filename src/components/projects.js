@@ -12,23 +12,38 @@ function Projects(props) {
   // Create a <ProjectThumbnail /> for each object in the state
   const createThumbnails = () => {
     const thumbnails = [];
-    visibleProjects.forEach((index) => {
-      const project = projectContent[index];
-      thumbnails.push(
-        <Link
-          to={`/projects/${project.url}`}
-          className="col-lg-4 col-md-6 thumbnail"
-        >
-          <ProjectThumbnail
-            title={project.title}
-            description={project.description}
-            imageSrc={project.imageSrc}
-            imageAlt={project.imageAlt}
-          />
-        </Link>,
-      );
-    });
-    return thumbnails;
+    if (searchText) {
+      visibleProjects.forEach((index) => {
+        const project = projectContent[index];
+        thumbnails.push(
+          <Link
+            to={`/projects/${project.url}`}
+            className="col-lg-4 col-md-6 thumbnail"
+          >
+            <ProjectThumbnail
+              title={project.title}
+              description={project.description}
+              imageSrc={project.imageSrc}
+              imageAlt={project.imageAlt}
+            />
+          </Link>,
+        );
+      });
+      return thumbnails;
+    }
+    return projectContent.map((project) => (
+      <Link
+        to={`/projects/${project.url}`}
+        className="col-lg-4 col-md-6 thumbnail"
+      >
+        <ProjectThumbnail
+          title={project.title}
+          description={project.description}
+          imageSrc={project.imageSrc}
+          imageAlt={project.imageAlt}
+        />
+      </Link>
+    ));
   };
 
   // Filter relevant project indices to state
