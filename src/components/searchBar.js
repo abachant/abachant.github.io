@@ -7,12 +7,6 @@ function SearchBar({ searchProjects, searchText, setSearchText }) {
     [],
   );
 
-  useEffect(() => {
-    return () => {
-      debouncedSearchProjects.cancel();
-    };
-  }, [debouncedSearchProjects]);
-
   const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
     debouncedSearchProjects(e.target.value);
@@ -23,6 +17,12 @@ function SearchBar({ searchProjects, searchText, setSearchText }) {
       e.preventDefault();
     }
   };
+
+  useEffect(() => {
+    return () => {
+      debouncedSearchProjects.cancel();
+    };
+  }, [debouncedSearchProjects]);
 
   return (
     <form className="search-bar-container">
