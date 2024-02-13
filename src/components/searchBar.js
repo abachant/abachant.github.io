@@ -26,6 +26,9 @@ function SearchBar({ searchProjects, searchText, setSearchText }) {
 
   return (
     <form className="search-bar-container">
+      <label htmlFor="search-input" className="visually-hidden">
+        Search technologies, frameworks, etc.
+      </label>
       <input
         placeholder="Search technologies, frameworks etc."
         className="search-bar-input"
