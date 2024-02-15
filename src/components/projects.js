@@ -15,6 +15,7 @@ function Projects(props) {
       <Link
         to={`/projects/${project.url}`}
         className="col-lg-4 col-md-6 thumbnail"
+        key={project.id}
       >
         <ProjectThumbnail
           title={project.title}
