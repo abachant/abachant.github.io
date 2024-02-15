@@ -1,77 +1,75 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import ProjectThumbnail from './projectThumbnail.js';
+import ProjectThumbnail from "./projectThumbnail.js";
+import SearchBar from "./searchBar.js";
+import projectContent from "./projectContent.jsx";
 
+function Projects(props) {
+  const [visibleProjects, setVisibleProjects] = useState([]);
+  const [searchText, setSearchText] = useState("");
 
-class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projectThumbnails: [
-        {
-          title: "This Site",
-          id: "1",
-          url: "abachant-github-pages",
-          description: "A custom website built from scratch",
-          imageSrc: "android-chrome-512x512.png",
-          imageAlt: "thumbnail",
-        },
-        {
-          title: "RIPTA Dashboard",
-          id: "2",
-          url: "RIPTA-dashboard",
-          description: "Realtime dashboard using RIPTA's API",
-          imageSrc: require("../pictures/ripta-dashboard.png"),
-          imageAlt: "thumbnail",
-        },
-        {
-          title: "OSMnx Grid Analysis",
-          id: "3",
-          url: "osmnx-grids",
-          description: "Using OSMnx to analyze the grids of New York City",
-          imageSrc: require("../pictures/osmnx_nyc_crop.png"),
-          imageAlt: "thumbnail",
-        },
-        {
-          title: "Rhyme Scheme Analysis",
-          id: "4",
-          url: "rhyme-scheme",
-          description: "A Jupyter Notebook for analyzing stylistic habits of songwriters",
-          imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
-          imageAlt: "thumbnail",
-        },
-        {
-          title: "Catwalk",
-          id: "5",
-          url: "catwalk",
-          description: "A clothing retailer webportal built in React",
-          imageSrc: require("../pictures/catwalk-thumbnail.png"),
-          imageAlt: "thumbnail",
-        }
-      ]
-    };
+  // Create a <ProjectThumbnail /> from an object
+  const createThumbnail = (project) => {
+    return (
+      <Link
+        to={`/projects/${project.url}`}
+        className="col-lg-4 col-md-6 thumbnail"
+        key={project.id}
+      >
+        <ProjectThumbnail
+          title={project.title}
+          description={project.description}
+          imageSrc={project.imageSrc}
+          imageAlt={project.imageAlt}
+        />
+      </Link>
+    );
   };
 
-  // Create a <ProjectThumbnail /> for each object in the state
-  createThumbnails() {
-    return this.state.projectThumbnails.reverse().map(object =>
-      <Link to={`/projects/${object.url}`} className="col-lg-4 col-md-6 thumbnail">
-        <ProjectThumbnail
-          title={object.title}
-          description={object.description}
-          imageSrc={object.imageSrc}
-          imageAlt={object.imageAlt} />
-      </Link>)
-  }
+  // Render a <ProjectThumbnail /> for each object in the state
+  const renderThumbnails = () => {
+    const thumbnails = [];
+    if (searchText) {
+      if (visibleProjects.length > 0) {
+        visibleProjects.forEach((index) => {
+          const visibleProject = projectContent[index];
+          thumbnails.push(createThumbnail(visibleProject));
+        });
+        return thumbnails;
+      } else {
+        return (
+          <div className="thumbnail no-projects-warning">
+            No Projects Found
+          </div>
+        );
+      }
+    }
+    return projectContent.map((project) => createThumbnail(project));
+  };
 
-  render() {
-    return (
-      <div className="container-fluid thumbnail-container page-content">
-        {this.createThumbnails()}
-      </div>
-    );
-  }
+  // Filter project indices relevant to search to state
+  const searchProjects = (query) => {
+    const normalizedQuery = query.toLowerCase();
+    let relevantProjects = [];
+    for (let i = 0; i < projectContent.length; i++) {
+      if (projectContent[i].technology.includes(normalizedQuery)) {
+        relevantProjects.push(i);
+      }
+    }
+    setVisibleProjects(relevantProjects);
+  };
+
+  return (
+    <div className="container-fluid thumbnail-container page-content">
+      <SearchBar
+        searchProjects={searchProjects}
+        searchText={searchText}
+        setSearchText={setSearchText}
+      />
+      {renderThumbnails()}
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;

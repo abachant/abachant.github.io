@@ -3,18 +3,18 @@
 body {
   margin: 0;
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: 'Questrial', 'Roboto', 'Raleway', 'Monteserrat';
+  font-family: "Questrial", "Roboto", "Raleway", "Monteserrat";
   font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -24,7 +24,7 @@ footer {
 
 html {
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -41,6 +41,7 @@ html {
 .app-content {
   overflow-y: auto;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .certificate {
@@ -65,7 +66,7 @@ html {
   transform: scale(1.05);
 }
 
-.img-content{
+.img-content {
   width: 100%;
 }
 
@@ -78,7 +79,7 @@ html {
   font-size: 4rem;
 }
 
-.page-content{
+.page-content {
   padding: 1.5% 3% 1%;
 }
 
@@ -93,6 +94,21 @@ html {
   margin-left: 1%;
   margin-right: 1%;
 }
+.search-bar-container {
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  & .search-bar-input {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
 
 .thumbnail {
   margin-top: 15px;
@@ -104,6 +120,12 @@ html {
 .thumbnail-container {
   display: flex;
   flex-wrap: wrap;
+  & .no-projects-warning {
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .thumbnail-image {
@@ -112,6 +134,16 @@ html {
 
 .thumbnail-image-container {
   overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 /* ids */
 
@@ -124,4 +156,3 @@ html {
   padding-top: 7%;
   padding-right: 15%;
 }
-
