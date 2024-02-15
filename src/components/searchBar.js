@@ -4,6 +4,7 @@ import debounce from "lodash/debounce";
 function SearchBar({ searchProjects, searchText, setSearchText }) {
   const debouncedSearchProjects = useMemo(() => {
     return debounce((query) => searchProjects(query), 200);
+    // eslint-disable-next-line
   }, []);
 
   const handleSearchTextChange = (e) => {
