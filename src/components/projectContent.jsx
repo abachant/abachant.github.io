@@ -14,9 +14,19 @@ const content = [
       "api",
       "rest",
       "aws",
-      "postgres",
+      "postgresql",
       "sql",
       "microservices",
+      "git",
+      "github",
+      "html",
+      "css",
+      "sass",
+      "express",
+      "jest",
+      "babel",
+      "webpack",
+      "eslint",
     ],
     html: (
       <div>
@@ -105,7 +115,7 @@ const content = [
       "A Jupyter Notebook for analyzing stylistic habits of songwriters",
     imageSrc: require("../pictures/rhyme_ratio_violin_thumbnail.png"),
     imageAlt: "thumbnail",
-    technology: ["python", "pandas", "jupyter", "git", "matplotlib"],
+    technology: ["python", "pandas", "jupyter", "git", "github", "matplotlib"],
     html: (
       <div>
         <div>
@@ -235,7 +245,7 @@ const content = [
     description: "Using OSMnx to analyze the grids of New York City",
     imageSrc: require("../pictures/osmnx_nyc_crop.png"),
     imageAlt: "thumbnail",
-    technology: ["python", "plotly", "osm", "jupyter"],
+    technology: ["python", "plotly", "osm", "jupyter", "git", "github"],
     html: (
       <div>
         <div>
@@ -365,7 +375,18 @@ const content = [
     description: "Realtime dashboard using RIPTA's API",
     imageSrc: require("../pictures/ripta-dashboard.png"),
     imageAlt: "thumbnail",
-    technology: ["python", "plotly", "api", "rest"],
+    technology: [
+      "python",
+      "plotly",
+      "api",
+      "rest",
+      "git",
+      "github",
+      "numpy",
+      "json",
+      "dash",
+      "html",
+    ],
     html: (
       <div>
         <div>
@@ -449,6 +470,9 @@ const content = [
       "bem",
       "es6",
       "git",
+      "github",
+      "webpack",
+      "babel",
     ],
     html: (
       <div>
