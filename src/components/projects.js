@@ -31,11 +31,19 @@ function Projects(props) {
   const renderThumbnails = () => {
     const thumbnails = [];
     if (searchText) {
-      visibleProjects.forEach((index) => {
-        const visibleProject = projectContent[index];
-        thumbnails.push(createThumbnail(visibleProject));
-      });
-      return thumbnails;
+      if (visibleProjects.length > 0) {
+        visibleProjects.forEach((index) => {
+          const visibleProject = projectContent[index];
+          thumbnails.push(createThumbnail(visibleProject));
+        });
+        return thumbnails;
+      } else {
+        return (
+          <div className="thumbnail no-projects-warning">
+            No Projects Found
+          </div>
+        );
+      }
     }
     return projectContent.map((project) => createThumbnail(project));
   };

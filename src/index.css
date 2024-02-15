@@ -120,6 +120,12 @@ html {
 .thumbnail-container {
   display: flex;
   flex-wrap: wrap;
+  & .no-projects-warning {
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .thumbnail-image {
