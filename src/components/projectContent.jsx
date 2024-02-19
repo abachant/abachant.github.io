@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const content = [
   {
@@ -496,6 +497,18 @@ const content = [
             was a lot of fun since I had only used React before for single page
             applications. I also got the chance to reorganize and improve the
             styling methodologies by implementing BEM.
+          </p>
+          <p>
+            In 2024, I embraced the opportunity to enhance my portfolio further
+            by implementing a feature close to my heart: a project search bar.
+            This addition was not just about showcasing my technical prowess but
+            also about making my portfolio a more interactive and user-friendly
+            space. By enabling visitors to filter projects by technology stacks,
+            I aimed to demonstrate my versatility and deep engagement with
+            different technologies. This feature was born out of my desire to
+            not only display my projects but to also connect with fellow
+            developers and potential employers on a more intuitive level. View
+            this on the <Link to={`/projects`}>here</Link> on the projects page.
           </p>
         </div>
         <hr></hr>
