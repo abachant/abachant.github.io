@@ -98,7 +98,7 @@ function Resume() {
             </div>
             <hr />
             <div>
-                <a href={require("../pictures/Aubrey_Bachant_Resume.pdf")} download>Download Resume as PDF</a>
+                <a href={"https://docs.google.com/document/d/e/2PACX-1vT3UK1DVz-U-tORmu2gMu05lCwjL7nPT19bhaiunvjj0KXjL2K3eYOq-5WS7pgF20jixf-bsDxItaTL/pub"}>View Resume on Google Docs</a>
             </div>
         </div>
     )
