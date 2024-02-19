@@ -2,8 +2,8 @@ import React from "react";
 
 function Resume() {
   return (
-    <div className="page-content" id="resume">
-      <div>
+    <div className="page-content resume" id="resume">
+      <div className="resume__contact-info">
         <h1>AUBREY LYNN BACHANT</h1>
         <h4>
           <a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> |
@@ -16,9 +16,9 @@ function Resume() {
         </h4>
       </div>
       <hr />
-      <div>
-        <h3>Experience</h3>
-        <div className="resume-subsection">
+      <div className="resume__body">
+        <section className="resume__subsection">
+          <h3>Experience</h3>
           <div className="resume-experience-container">
             <h4>Software Engineer</h4>
             <h5>
@@ -137,62 +137,64 @@ function Resume() {
               </li>
             </ul>
           </div>
-        </div>
-        <h3>Skills</h3>
-        <ul>
-          <li>JavaScript</li>
+        </section>
+        <section className="resume__subsection">
+          <h3>Skills</h3>
           <ul>
-            <li>React</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>Babel</li>
-            <li>jQuery</li>
-            <li>Jest</li>
-            <li>Sequelize</li>
-            <li>ES6</li>
+            <li>JavaScript</li>
+            <ul>
+              <li>React</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>Babel</li>
+              <li>jQuery</li>
+              <li>Jest</li>
+              <li>Sequelize</li>
+              <li>ES6</li>
+            </ul>
+            <li>TypeScript</li>
+            <li>Python</li>
+            <ul>
+              <li>Pandas</li>
+              <li>Jupyter Notebook</li>
+              <li>Matplotlib</li>
+              <li>Plotly</li>
+            </ul>
+            <li>SQL</li>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MariaDB</li>
+              <li>MYSQL</li>
+            </ul>
+            <li>NOSQL</li>
+            <ul>
+              <li>Firebase</li>
+              <li>MongoDB</li>
+            </ul>
+            <li>Git</li>
+            <ul>
+              <li>GitHub</li>
+              <li>GitHub Actions</li>
+            </ul>
+            <li>Bash</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <ul>
+              <li>SASS</li>
+              <li>BEM</li>
+              <li>Bootstrap</li>
+            </ul>
+            <li>Webpack</li>
+            <li>Docker</li>
+            <li>Agile Development</li>
+            <li>Tulip App Builder</li>
+            <li>Windows Office(Word, Excel, Powerpoint)</li>
+            <li>SketchUp CAD Software</li>
+            <li>French(intermediate)</li>
           </ul>
-          <li>TypeScript</li>
-          <li>Python</li>
-          <ul>
-            <li>Pandas</li>
-            <li>Jupyter Notebook</li>
-            <li>Matplotlib</li>
-            <li>Plotly</li>
-          </ul>
-          <li>SQL</li>
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MariaDB</li>
-            <li>MYSQL</li>
-          </ul>
-          <li>NOSQL</li>
-          <ul>
-            <li>Firebase</li>
-            <li>MongoDB</li>
-          </ul>
-          <li>Git</li>
-          <ul>
-            <li>GitHub</li>
-            <li>GitHub Actions</li>
-          </ul>
-          <li>Bash</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <ul>
-            <li>SASS</li>
-            <li>BEM</li>
-            <li>Bootstrap</li>
-          </ul>
-          <li>Webpack</li>
-          <li>Docker</li>
-          <li>Agile Development</li>
-          <li>Tulip App Builder</li>
-          <li>Windows Office(Word, Excel, Powerpoint)</li>
-          <li>SketchUp CAD Software</li>
-          <li>French(intermediate)</li>
-        </ul>
-        <h3>Projects</h3>
-        <div className="resume-subsection">
+        </section>
+        <section className="resume__subsection">
+          <h3>Projects</h3>
           {/* <h4>In Progress</h4>
           <h5>
             <a href="https://github.com/abachant/laneclaim">Lane Claim</a>
@@ -222,21 +224,23 @@ function Resume() {
           <p>
             See <a href="projects">Projects page</a>
           </p>
-        </div>
-        <h3>Education</h3>
-        <div className="resume-subsection">
-          <h4>
-            <a href="https://www.hackreactor.com/">Hack Reactor (2021)</a>
-          </h4>
-          <ul>
-            <li>Advanced Software Engineering Immersive Program</li>
-            <img
-              className="certificate"
-              src={require("../pictures/Hack_Reactor_Certificate.png")}
-              alt="Hack Reactor Certificate"
-            ></img>
-          </ul>
-        </div>
+        </section>
+        <section className="resume__subsection">
+          <h3>Education</h3>
+          <div className="resume-subsection">
+            <h4>
+              <a href="https://www.hackreactor.com/">Hack Reactor (2021)</a>
+            </h4>
+            <ul>
+              <li>Advanced Software Engineering Immersive Program</li>
+              <img
+                className="certificate"
+                src={require("../pictures/Hack_Reactor_Certificate.png")}
+                alt="Hack Reactor Certificate"
+              ></img>
+            </ul>
+          </div>
+        </section>
       </div>
       <hr />
       <div>
