@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b19e0d80.css",
-    "main.js": "/static/js/main.6fa3a27d.js",
+    "main.js": "/static/js/main.05a31946.js",
     "static/media/background.gif": "/static/media/background.d00bfe85baa4e4900fdd.gif",
     "static/media/catwalk-product.png": "/static/media/catwalk-product.0748bb9e7f3f3ecfa6d1.png",
     "static/media/catwalk-thumbnail.png": "/static/media/catwalk-thumbnail.98aae99e535d9e813aff.png",
@@ -20,13 +20,12 @@
     "static/media/instrumental.png": "/static/media/instrumental.76771119473f8ad4cdb5.png",
     "static/media/ripta-dashboard.png": "/static/media/ripta-dashboard.5f51670e7ec6ebd164a7.png",
     "static/media/Hack_Reactor_Certificate.png": "/static/media/Hack_Reactor_Certificate.56c19dc9bdb9129ab44f.png",
-    "static/media/Aubrey_Bachant_Resume.pdf": "/static/media/Aubrey_Bachant_Resume.78c99afcacbe3c1d355f.pdf",
     "index.html": "/index.html",
     "main.b19e0d80.css.map": "/static/css/main.b19e0d80.css.map",
-    "main.6fa3a27d.js.map": "/static/js/main.6fa3a27d.js.map"
+    "main.05a31946.js.map": "/static/js/main.05a31946.js.map"
   },
   "entrypoints": [
     "static/css/main.b19e0d80.css",
-    "static/js/main.6fa3a27d.js"
+    "static/js/main.05a31946.js"
   ]
 }
