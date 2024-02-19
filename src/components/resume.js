@@ -105,13 +105,13 @@ function Resume() {
         <h3>Experience</h3>
         <div className="resume-subsection">
           <div className="resume-experience-container">
-            <h4>
+            <h4>Software Engineer</h4>
+            <h5>
               <a href="https://www.linkedin.com/company/getturnout/">
                 Everyspace
-              </a>
-              , New York, NY
-            </h4>
-            <h5>Software Engineer: (December 2022 — Current)</h5>
+              </a>{" "}
+              | December 2022 — Current
+            </h5>
             <ul>
               <li>
                 Designed and developed reusable Vue components to enhance
@@ -136,12 +136,10 @@ function Resume() {
             </ul>
           </div>
           <div className="resume-experience-container">
-            <h4>
-              <a href="https://www.linkedin.com/company/windesco/">Windesco</a>,
-              Burlington, MA
-            </h4>
+            <h4>Software Engineer Contract</h4>
             <h5>
-              Software Engineer Contract: (September 2023 — December 2023)
+              <a href="https://www.linkedin.com/company/windesco/">Windesco</a>{" "}
+              | September 2023 — December 2023
             </h5>
             <ul>
               <li>
@@ -171,12 +169,10 @@ function Resume() {
             </ul>
           </div>
           <div className="resume-experience-container">
-            <h4>
-              <a href="https://www.linkedin.com/company/roomdex/">Roomdex</a>,
-              Santa Cruz, CA
-            </h4>
+            <h4>User Interface Engineer Contract</h4>
             <h5>
-              User Interface Engineer Contract: (December 2021 — February 2022)
+              <a href="https://www.linkedin.com/company/roomdex/">Roomdex</a> |
+              December 2021 — February 2022
             </h5>
             <ul>
               <li>
@@ -198,13 +194,13 @@ function Resume() {
             </ul>
           </div>
           <div className="resume-experience-container">
-            <h4>
+            <h4>Junior Software Engineer Intern</h4>
+            <h5>
               <a href="https://www.linkedin.com/company/getdashride/">
                 Dashride
-              </a>
-              , New York, NY
-            </h4>
-            <h5>Junior Software Engineer: (June 2021 — December 2021)</h5>
+              </a>{" "}
+              | June 2021 — December 2021
+            </h5>
             <ul>
               <li>
                 Developed and implemented reusable React components to enhance
