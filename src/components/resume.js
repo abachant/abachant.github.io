@@ -160,6 +160,9 @@ function Resume() {
             <ul>
               <li>JavaScript</li>
               <ul>
+                <li>TypeScript</li>
+                <li>Vue</li>
+                <li>Angular</li>
                 <li>React</li>
                 <li>Node</li>
                 <li>Express</li>
@@ -169,7 +172,7 @@ function Resume() {
                 <li>Sequelize</li>
                 <li>ES6</li>
               </ul>
-              <li>TypeScript</li>
+
               <li>Python</li>
               <ul>
                 <li>Pandas</li>
