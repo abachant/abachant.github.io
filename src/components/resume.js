@@ -4,22 +4,38 @@ function Resume() {
   return (
     <div className="page-content resume" id="resume">
       <div className="resume__contact-info">
-        <h1>AUBREY LYNN BACHANT</h1>
-        <h4>
-          <a href="mailto:aubreybachant@gmail.com">aubreybachant@gmail.com</a> |
-          774-400-8759 |{" "}
-          <a href="https://www.linkedin.com/in/aubrey-bachant/">LinkedIn</a> |{" "}
-          <a href="https://github.com/abachant">GitHub</a>
+        <h1 className="resume__name">AUBREY LYNN BACHANT</h1>
+        <h4 className="resume__contact-details">
+          <a
+            href="mailto:aubreybachant@gmail.com"
+            className="resume__contact-link"
+          >
+            aubreybachant@gmail.com
+          </a>{" "}
+          | 774-400-8759 |{" "}
+          <a
+            href="https://www.linkedin.com/in/aubrey-bachant/"
+            className="resume__contact-link"
+          >
+            LinkedIn
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://github.com/abachant"
+            className="resume__contact-link"
+          >
+            GitHub
+          </a>
         </h4>
-        <h4>
+        <h4 className="resume__location">
           Philadelphia, Pennsylvania <small>(willing to relocate)</small>
         </h4>
       </div>
-      <hr />
+      <hr className="resume__divider" />
       <div className="resume__body">
-        <section className="resume__subsection">
-          <h3>Experience</h3>
-          <div className="resume-experience-container">
+        <section className="resume__section resume__section--experience">
+          <h3 className="resume__section-title">Experience</h3>
+          <div className="resume__experience">
             <h4>Software Engineer</h4>
             <h5>
               <a href="https://www.linkedin.com/company/getturnout/">
@@ -50,7 +66,7 @@ function Resume() {
               </li>
             </ul>
           </div>
-          <div className="resume-experience-container">
+          <div className="resume__experience">
             <h4>Software Engineer Contract</h4>
             <h5>
               <a href="https://www.linkedin.com/company/windesco/">Windesco</a>{" "}
@@ -83,7 +99,7 @@ function Resume() {
               </li>
             </ul>
           </div>
-          <div className="resume-experience-container">
+          <div className="resume__experience">
             <h4>User Interface Engineer Contract</h4>
             <h5>
               <a href="https://www.linkedin.com/company/roomdex/">Roomdex</a> |
@@ -108,7 +124,7 @@ function Resume() {
               </li>
             </ul>
           </div>
-          <div className="resume-experience-container">
+          <div className="resume__experience">
             <h4>Junior Software Engineer Intern</h4>
             <h5>
               <a href="https://www.linkedin.com/company/getdashride/">
@@ -138,96 +154,74 @@ function Resume() {
             </ul>
           </div>
         </section>
-        <section className="resume__subsection">
-          <h3>Skills</h3>
-          <ul>
-            <li>JavaScript</li>
+        <section className="resume__section resume__section--skills">
+          <h3 className="resume__section-title">Skills</h3>
+          <div className="resume__skills">
             <ul>
-              <li>React</li>
-              <li>Node</li>
-              <li>Express</li>
-              <li>Babel</li>
-              <li>jQuery</li>
-              <li>Jest</li>
-              <li>Sequelize</li>
-              <li>ES6</li>
+              <li>JavaScript</li>
+              <ul>
+                <li>React</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>Babel</li>
+                <li>jQuery</li>
+                <li>Jest</li>
+                <li>Sequelize</li>
+                <li>ES6</li>
+              </ul>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <ul>
+                <li>Pandas</li>
+                <li>Jupyter Notebook</li>
+                <li>Matplotlib</li>
+                <li>Plotly</li>
+              </ul>
+              <li>SQL</li>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MariaDB</li>
+                <li>MYSQL</li>
+              </ul>
+              <li>NOSQL</li>
+              <ul>
+                <li>Firebase</li>
+                <li>MongoDB</li>
+              </ul>
+              <li>Git</li>
+              <ul>
+                <li>GitHub</li>
+                <li>GitHub Actions</li>
+              </ul>
+              <li>Bash</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <ul>
+                <li>SASS</li>
+                <li>BEM</li>
+                <li>Bootstrap</li>
+              </ul>
+              <li>Webpack</li>
+              <li>Docker</li>
+              <li>Agile Development</li>
+              <li>Tulip App Builder</li>
+              <li>Windows Office(Word, Excel, Powerpoint)</li>
+              <li>SketchUp CAD Software</li>
+              <li>French(intermediate)</li>
             </ul>
-            <li>TypeScript</li>
-            <li>Python</li>
-            <ul>
-              <li>Pandas</li>
-              <li>Jupyter Notebook</li>
-              <li>Matplotlib</li>
-              <li>Plotly</li>
-            </ul>
-            <li>SQL</li>
-            <ul>
-              <li>PostgreSQL</li>
-              <li>MariaDB</li>
-              <li>MYSQL</li>
-            </ul>
-            <li>NOSQL</li>
-            <ul>
-              <li>Firebase</li>
-              <li>MongoDB</li>
-            </ul>
-            <li>Git</li>
-            <ul>
-              <li>GitHub</li>
-              <li>GitHub Actions</li>
-            </ul>
-            <li>Bash</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <ul>
-              <li>SASS</li>
-              <li>BEM</li>
-              <li>Bootstrap</li>
-            </ul>
-            <li>Webpack</li>
-            <li>Docker</li>
-            <li>Agile Development</li>
-            <li>Tulip App Builder</li>
-            <li>Windows Office(Word, Excel, Powerpoint)</li>
-            <li>SketchUp CAD Software</li>
-            <li>French(intermediate)</li>
-          </ul>
+          </div>
         </section>
-        <section className="resume__subsection">
-          <h3>Projects</h3>
-          {/* <h4>In Progress</h4>
-          <h5>
-            <a href="https://github.com/abachant/laneclaim">Lane Claim</a>
-          </h5>
-          <ul>
-            <li>
-              Lane Claim is a progressive web app designed for tracking and
-              reporting bikelane hazards, primarily cars
-            </li>
-            <li>
-              It is built in TypeScript and React, is styled with SASS, and uses
-              Jest for testing
-            </li>
-            <li>
-              It uses Firebase{" "}
-              <a href="https://firebase.google.com/products/realtime-database/">
-                Realtime Database
-              </a>{" "}
-              and{" "}
-              <a href="https://firebase.google.com/products/storage/">
-                Storage
-              </a>{" "}
-              for its data
-            </li>
-          </ul>
-          <h4>Complete</h4> */}
-          <p>
-            See <a href="projects">Projects page</a>
-          </p>
+        <section className="resume__section resume__section--projects">
+          <h3 className="resume__section-title">Projects</h3>
+          <div className="resume__projects">
+            <p>
+              See <a href="projects">Projects page</a>
+            </p>
+          </div>
         </section>
-        <section className="resume__subsection">
-          <h3>Education</h3>
-          <div className="resume-subsection">
+        <section className="resume__section resume__section--education">
+          <h3 className="resume__section-title">Education</h3>
+          <div className="resume__education">
             <h4>
               <a href="https://www.hackreactor.com/">Hack Reactor (2021)</a>
             </h4>
@@ -242,12 +236,13 @@ function Resume() {
           </div>
         </section>
       </div>
-      <hr />
-      <div>
+      <hr className="resume__divider" />
+      <div className="resume__footer">
         <a
           href={
             "https://docs.google.com/document/d/e/2PACX-1vT3UK1DVz-U-tORmu2gMu05lCwjL7nPT19bhaiunvjj0KXjL2K3eYOq-5WS7pgF20jixf-bsDxItaTL/pub"
           }
+          className="resume__footer-link"
         >
           View Resume on Google Docs
         </a>
