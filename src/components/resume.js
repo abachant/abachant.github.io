@@ -104,24 +104,128 @@ function Resume() {
         </div>
         <h3>Experience</h3>
         <div className="resume-subsection">
-          <h4>
-            <a href="https://www.linkedin.com/company/getturnout/">
-              Everyspace
-            </a>
-            , New York, NY
-          </h4>
-          <h5>Junior Software Engineer: (June 2021—Current)</h5>
-          <ul>
-            <li>
-              Added new reusable React components for searching and adding
-              locations for appointment creation
-            </li>
-            <li>Added new API endpoints for fetching user information</li>
-            <li>
-              Increased Unit, Functional, and Integration test coverage by 15%
-            </li>
-            <li>Used Scrum development to better collaborate with teammates</li>
-          </ul>
+          <div className="resume-experience-container">
+            <h4>
+              <a href="https://www.linkedin.com/company/getturnout/">
+                Everyspace
+              </a>
+              , New York, NY
+            </h4>
+            <h5>Software Engineer: (December 2022 — Current)</h5>
+            <ul>
+              <li>
+                Designed and developed reusable Vue components to enhance
+                appointment creation, including advanced location search and
+                addition functionality.
+              </li>
+              <li>
+                Added and maintained RESTful API endpoints to fetch user
+                information, improving data accessibility and application
+                functionality.
+              </li>
+              <li>
+                Improved API performance by implementing updated Firebase query
+                methods, resulting in a 20 requests-per-second increase in
+                response time.
+              </li>
+              <li>
+                Increased user engagement metrics by integrating Webhooks with
+                Zoom, enabling seamless scheduling and enhancing overall user
+                experience.
+              </li>
+            </ul>
+          </div>
+          <div className="resume-experience-container">
+            <h4>
+              <a href="https://www.linkedin.com/company/windesco/">Windesco</a>,
+              Burlington, MA
+            </h4>
+            <h5>
+              Software Engineer Contract: (September 2023 — December 2023)
+            </h5>
+            <ul>
+              <li>
+                Enhanced the user experience of a wind farm data tracking web
+                portal through front-end development, including implementing
+                features like subscription handling, icons for issue statuses,
+                and data visualization improvements.
+              </li>
+              <li>
+                Successfully resolved complex issues independently, including
+                activation/deactivation for users, spinner implementation during
+                data updates, and bug fixes, demonstrating self-reliance and
+                troubleshooting skills.
+              </li>
+              <li>
+                Engaged in pair programming sessions with other front-end
+                developers, contributing to collaborative solutions such as
+                adding availability to tables and enhancing user experience with
+                loading spinners for recommendations.
+              </li>
+              <li>
+                Improved portal usability and data accuracy by addressing issues
+                like handling special characters, resolving bugs, and
+                implementing data-related features, enhancing overall portal
+                quality.
+              </li>
+            </ul>
+          </div>
+          <div className="resume-experience-container">
+            <h4>
+              <a href="https://www.linkedin.com/company/roomdex/">Roomdex</a>,
+              Santa Cruz, CA
+            </h4>
+            <h5>
+              User Interface Engineer Contract: (December 2021 — February 2022)
+            </h5>
+            <ul>
+              <li>
+                Developed and implemented Angular components to dynamically
+                generate forms from objects, enhancing the user interface and
+                improving data input efficiency.
+              </li>
+              <li>
+                Maintained rigorous quality standards by achieving and
+                sustaining 100% line test coverage for all code, including
+                contributions to others' code, to ensure the highest reliability
+                and performance.
+              </li>
+              <li>
+                Implemented continuous integration practices to ensure a
+                consistently shippable product, facilitating seamless
+                development, testing, and deployment processes.
+              </li>
+            </ul>
+          </div>
+          <div className="resume-experience-container">
+            <h4>
+              <a href="https://www.linkedin.com/company/getdashride/">
+                Dashride
+              </a>
+              , New York, NY
+            </h4>
+            <h5>Junior Software Engineer: (June 2021 — December 2021)</h5>
+            <ul>
+              <li>
+                Developed and implemented reusable React components to enhance
+                appointment creation, including searching and adding locations.
+              </li>
+              <li>
+                Designed and implemented new API endpoints to fetch user
+                information, improving application functionality and data
+                accessibility.
+              </li>
+              <li>
+                Improved overall code quality by increasing unit, functional,
+                and integration test coverage by 15%.
+              </li>
+              <li>
+                Collaborated with cross-functional teams using Scrum methodology
+                to ensure seamless delivery of features and timely project
+                completion.
+              </li>
+            </ul>
+          </div>
         </div>
         <h3>Education</h3>
         <div className="resume-subsection">
