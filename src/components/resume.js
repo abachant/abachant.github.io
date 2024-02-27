@@ -45,12 +45,11 @@ function Resume() {
             </h5>
             <ul>
               <li>
-                Designed and developed reusable Vue components to enhance
-                appointment creation, including advanced location search and
-                addition functionality.
+                Designed and developed reusable Vue components to enhance the
+                User interface for accessing open conversations in Slack.
               </li>
               <li>
-                Added and maintained RESTful API endpoints to fetch user
+                Added and maintained RESTful API endpoints to fetch conversation
                 information, improving data accessibility and application
                 functionality.
               </li>
@@ -58,11 +57,6 @@ function Resume() {
                 Improved API performance by implementing updated Firebase query
                 methods, resulting in a 20 requests-per-second increase in
                 response time.
-              </li>
-              <li>
-                Increased user engagement metrics by integrating Webhooks with
-                Zoom, enabling seamless scheduling and enhancing overall user
-                experience.
               </li>
             </ul>
           </div>
