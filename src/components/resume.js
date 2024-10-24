@@ -41,7 +41,7 @@ function Resume() {
               <a href="https://www.linkedin.com/company/getturnout/">
                 Everyspace
               </a>{" "}
-              | December 2022 — Current
+              | February 2022 — Current
             </h5>
             <ul>
               <li>
@@ -58,20 +58,11 @@ function Resume() {
                 methods, resulting in a 20 requests-per-second increase in
                 response time.
               </li>
-            </ul>
-          </div>
-          <div className="resume__experience">
-            <h4>Software Engineer Contract</h4>
-            <h5>
-              <a href="https://www.linkedin.com/company/windesco/">Windesco</a>{" "}
-              | September 2023 — December 2023
-            </h5>
-            <ul>
               <li>
-                Enhanced the user experience of a wind farm data tracking web
-                portal through front-end development, including implementing
-                features like subscription handling, icons for issue statuses,
-                and data visualization improvements.
+                Enhanced the user experience of a ticket web portal through
+                front-end development, including implementing features like
+                subscription handling, icons for issue statuses, and data
+                visualization improvements.
               </li>
               <li>
                 Successfully resolved complex issues independently, including
@@ -83,13 +74,10 @@ function Resume() {
                 Engaged in pair programming sessions with other front-end
                 developers, contributing to collaborative solutions such as
                 adding availability to tables and enhancing user experience with
-                loading spinners for recommendations.
-              </li>
-              <li>
-                Improved portal usability and data accuracy by addressing issues
-                like handling special characters, resolving bugs, and
-                implementing data-related features, enhancing overall portal
-                quality.
+                loading spinners for recommendations. Improved portal usability
+                and data accuracy by addressing issues like handling special
+                characters, resolving bugs, and implementing data-related
+                features, enhancing overall portal quality.
               </li>
             </ul>
           </div>
