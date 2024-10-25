@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://abachant.github.io",
   "dependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
